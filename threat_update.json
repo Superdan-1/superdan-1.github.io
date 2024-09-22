@@ -1,0 +1,35 @@
+  {
+    "update_metadata": {
+    "date_of_update": "22/09/24",
+    "update_version": 2
+  },
+    "signature_1": {
+    "action": "UPDATE",
+    "query_type": 1,
+    "threat_name": "BadSpace",
+    "threat_category": "Malware",
+    "threat_intelligence": "BadSpace is a fake updates malware that infects legitimate websites with a malicious script to download a backdoor. This malicious script includes capabilities such as fingerprinting a user’s browser, retrieving the user agent, IP address, and geographical location. The backdoor itself employs anti-sandbox checks and maintains persistence by using scheduled tasks.",    "search_query": "page.url:'/p/land.php?device=' OR filename: 'land.php'  AND  filename: 'jquery-migrate.min.js'",
+    "confidence_rating": "100%",
+    "signature_author": "Daniel Braund",
+    "creation_date": "September 2024",
+    "revision_date": "N/A",
+    "revision_number": 1
+  },
+  "signature_2": {
+    "action": "CREATE",
+    "query_type": 1,
+    "threat_name": "GitHub Scanner",
+    "threat_category": "Malware",
+    "threat_intelligence": "GitHub Scanner is a malicious campaign which abuses GitHub repositories to distribute the infostealer malware Lumma Stealer. The adversaries responsible for this campaign have been observed opening new 'issues' on open-source repositories masquerading as GitHub reporting a security vulnerability within their project. Users are tricked into visiting a malicious domain where they are instructed to download the 'GitHub Scanner' software which is in fact malware.",
+    "search_query": "hash:3ca41416b51909ee41d767b86d66c097361b15e18ae21f8ad71a1efab47e0854",
+    "confidence_rating": "100%",
+    "signature_author": "Daniel Braund",
+    "creation_date": "September 2024",
+    "revision_date": "N/A",
+    "revision_number": 0
+  },
+  "signature_3": {
+    "action": "REMOVE",
+    "signature_id": 60
+  }
+}
